@@ -13,10 +13,13 @@ client.on("message", (message) => {
 
   const args = message.content.slice(prefix.length).split(" ");
   const command = args.shift().toLowerCase();
-  if (command === "ping") {
-    message.channel.send("Pong.");
-  } else if (command === "beep") {
-    message.channel.send("Boop.");
+  if (command === "water") {
+    message.channel.send(
+      "Okay, I will remind you to drink water every half an hour"
+    );
+    setInterval(() => {
+      message.channel.send("Drink water!");
+    }, 180000);
   }
 });
 
