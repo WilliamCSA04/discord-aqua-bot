@@ -19,7 +19,7 @@ client.on("message", (message) => {
     );
     setInterval(() => {
       message.channel.send("Drink water!");
-    }, 180000);
+    }, 1800000);
   }
 });
 
