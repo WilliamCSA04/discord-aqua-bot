@@ -3,21 +3,16 @@ const client = new Discord.Client();
 const dotenv = require("dotenv");
 dotenv.config();
 const prefix = process.env.PREFIX;
-const clientID = process.env.CLIENT_ID;
 
 client.once("ready", () => {
   console.log("ready");
 });
 
 client.on("message", (message) => {
-  if (message.content.startsWith(`<@!${clientID}>`)) {
-    message.channel.send("Did you called me?");
-  }
-  if (!message.content.startsWith(prefix) || message.author.bot) return;
+  if (!message.content.includes(prefix) || message.author.bot) return;
 
-  const args = message.content.slice(prefix.length).split(/ +/);
+  const args = message.content.slice(prefix.length).split(" ");
   const command = args.shift().toLowerCase();
-
   if (command === "ping") {
     message.channel.send("Pong.");
   } else if (command === "beep") {
