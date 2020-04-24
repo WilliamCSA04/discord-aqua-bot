@@ -1,11 +1,10 @@
 import Discord from "discord.js";
-import dotenv from "dotenv";
+import config from "./config";
 
+const { prefix, token, separator } = config;
 const client = new Discord.Client();
-dotenv.config();
 
-const prefix = process.env.PREFIX;
-const separator = process.env.SEPARATOR;
+client.login(token);
 
 client.once("ready", () => {
   console.log("ready");
@@ -26,5 +25,3 @@ client.on("message", (message) => {
     }, timer);
   }
 });
-
-client.login(process.env.TOKEN);
