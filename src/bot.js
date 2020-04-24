@@ -1,6 +1,7 @@
-const Discord = require("discord.js");
+import Discord from "discord.js";
+import dotenv from "dotenv";
+
 const client = new Discord.Client();
-const dotenv = require("dotenv");
 dotenv.config();
 
 const prefix = process.env.PREFIX;
