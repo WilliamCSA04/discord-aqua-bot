@@ -4,7 +4,7 @@
   "main": "./src/bot.js",
   "license": "MIT",
   "scripts": {
-    "start": "node ./src/bot.js"
+    "start": "sucrase-node ./src/bot.js --transforms imports"
   },
   "dependencies": {
     "discord.js": "^12.2.0",
