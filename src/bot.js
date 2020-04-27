@@ -17,9 +17,9 @@ client.on("message", (message) => {
   const command = args.shift().toLowerCase();
   if (command === "water") {
     message.channel.send(
-      "Okay, I will remind you to drink water every half an hour"
+      "Okay, I will remind you to drink water every 20 minutes"
     );
-    const timer = 1800000;
+    const timer = 1200000;
     setInterval(() => {
       message.channel.send("Drink water!");
     }, timer);
