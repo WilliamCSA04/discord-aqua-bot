@@ -1,5 +1,5 @@
 import Discord from "discord.js";
-import { login } from "./Discord/discord";
+import { login, ready } from "./Discord/discord";
 import config from "./config";
 
 const { prefix, token, separator } = config;
@@ -7,7 +7,7 @@ const client = new Discord.Client();
 
 login(token);
 
-client.once("ready", () => {
+ready(() => {
   console.log("ready");
 });
 
