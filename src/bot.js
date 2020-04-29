@@ -1,9 +1,7 @@
-import Discord from "discord.js";
-import { login, ready } from "./Discord/discord";
+import { login, ready, message } from "./Discord/discord";
 import config from "./config";
 
 const { prefix, token, separator } = config;
-const client = new Discord.Client();
 
 login(token);
 
@@ -11,7 +9,7 @@ ready(() => {
   console.log("ready");
 });
 
-client.on("message", (message) => {
+message((message) => {
   if (!message.content.includes(prefix) || message.author.bot) return;
 
   const args = message.content.slice(prefix.length).split(separator);

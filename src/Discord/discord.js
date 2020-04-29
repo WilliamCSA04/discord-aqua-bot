@@ -8,3 +8,7 @@ export function login(token) {
 export function ready(callback) {
   client.once("ready", callback);
 }
+
+export function message(callback) {
+  client.on("message", callback);
+}
