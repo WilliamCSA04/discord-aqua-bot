@@ -1,6 +1,7 @@
-import { login, ready, message } from "./Discord/discord";
+import discord from "./Discord";
 import config from "./config";
 
+const { login, ready, message } = discord;
 const { prefix, token, separator } = config;
 
 login(token);
