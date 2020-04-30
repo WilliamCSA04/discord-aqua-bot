@@ -1,12 +1,12 @@
 import config from "../config";
+import commandHandler from "./CommandHandler";
+
 const { prefix, separator } = config;
 
 export function start(message) {
   if (!message.content.includes(prefix) || message.author.bot) return;
-
-  const args = message.content.slice(prefix.length).split(separator);
-  const command = args.shift().toLowerCase();
-  if (command === "start") {
+  const command = commandHandler(message);
+  if (command.main === "start") {
     message.channel.send(
       "Okay, I will remind you to drink water every 20 minutes"
     );
