@@ -2,7 +2,7 @@
 
 **This project is still in development**
 
-This project is a bot created by me based on many other hydrate bots, it main function is send reminds for users on a discord server to drink water. **Aqua** (In japanese: アクア) is this bot name, it is actually named from the [anime character](https://www.google.com/search?client=firefox-b-d&q=aqua+anime) with same name from [Kono Subarashii Sekai ni Shukufuku wo!](https://konosuba.fandom.com/wiki/Kono_Subarashii_Sekai_ni_Shukufuku_wo!).
+This project is a bot created by me based on many other hydrate bots, it main function is send reminds for users on a discord server to drink water. **Aqua** (In japanese: アクア) is this bot name, it is actually named from the [anime character](https://konosuba.fandom.com/wiki/Aqua) with same name from [Kono Subarashii Sekai ni Shukufuku wo!](https://konosuba.fandom.com/wiki/Kono_Subarashii_Sekai_ni_Shukufuku_wo!).
 
 ## Motivation
 
@@ -33,7 +33,7 @@ Today, if you want to use this, you must download this project, and add a `.env`
   SEPARATOR=" " # This is to separate every command pass to the bot with
 ```
 
-So, if you want to add your project, go to [your applications](https://discord.com/developers/applications) on discord, go to access your application, there you will find a `CLIENT ID`, this is only important if like me you want to run your bot command like this `@Aqua start`, to do it you must set your `PREFIX="<@!(CLIENT ID)> "` just replace `(CLIENT ID)` for your `CLIENT ID` number on discord. **PS: It is really important that blank at the end of prefix if you go this approch**. Of couse, you can also choose a basic character like `!` to be your prefix.
+So, if you want to add your project, go to [your applications](https://discord.com/developers/applications) on discord, go to access your application, there you will find a `CLIENT ID`, this is only important if like me you want to run your bot command like this `@Aqua start`, to do it you must set your `PREFIX="<@!(CLIENT ID)> "` just replace `(CLIENT ID)` for your `CLIENT ID` number on discord. **PS: It is really important that blank at the end of prefix if you go for this approch**. Of couse, you can also choose a basic character like `!` to be your prefix.
 
 Your `TOKEN` is generated when you create your bot on your application. Go to your bot tab, create a bot or just copy the token it gave you and add as your `TOKEN`.
 
