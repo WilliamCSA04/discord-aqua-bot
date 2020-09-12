@@ -1,6 +1,7 @@
 import CommandHandler from "./CommandHandler";
 
-test("adds 1 + 2 to equal 3", () => {
-  const response = CommandHandler();
-  expect(response).toBe(null);
+describe("Command handler tests", () => {
+  test("Expect that CommandHandler without message return an error", () => {
+    expect(() => CommandHandler()).toThrow(Error);
+  });
 });
