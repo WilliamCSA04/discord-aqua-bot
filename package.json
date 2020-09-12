@@ -11,6 +11,7 @@
     "dotenv": "^8.2.0"
   },
   "devDependencies": {
+    "jest": "^26.4.2",
     "sucrase": "^3.13.0"
   }
 }
