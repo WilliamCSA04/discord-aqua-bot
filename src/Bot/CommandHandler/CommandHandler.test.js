@@ -17,4 +17,11 @@ describe("Command handler tests", () => {
     expect(main).toBe("start");
     expect(args).toEqual(["10"]);
   });
+  test("Expect that CommandHandler return a json with main with start and without args", () => {
+    const { main, args } = commandHandler({
+      content: `${config.prefix}stop`,
+    });
+    expect(main).toBe("stop");
+    expect(args).toEqual([]);
+  });
 });
