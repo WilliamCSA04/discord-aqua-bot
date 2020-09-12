@@ -54,14 +54,13 @@ For Aqua itself, that is the following features that I want to add to her:
 
 - start command :heavy_check_mark:
 - option for start command :heavy_check_mark:
-- stop command :construction:
+- stop command :heavy_check_mark:
 - Easter Eggs based on the anime character :warning:
 - Online server :warning:
 
 Legend:
 
 - :heavy_check_mark: Finished
-- :construction: Being implemented
-- :warning: It has a dependency
+- :warning: Extra features.
 
 After a small refactor and three main features finished and with test coverage this will turn into version 1, if possible, I will host her online to be used by anyone without need all the coding part.
