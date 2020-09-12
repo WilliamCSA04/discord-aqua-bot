@@ -1,4 +1,4 @@
-import config from "../config";
+import config from "../../config";
 const { prefix, separator } = config;
 
 export default function commandHandler(message) {

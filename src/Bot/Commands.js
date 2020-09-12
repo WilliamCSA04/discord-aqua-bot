@@ -1,5 +1,5 @@
 import config from "../config";
-import commandHandler from "./CommandHandler";
+import commandHandler from "./CommandHandler/CommandHandler";
 
 const { prefix } = config;
 
