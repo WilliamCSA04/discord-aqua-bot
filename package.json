@@ -1,6 +1,6 @@
 {
   "name": "aqua-bot",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "main": "./src/bot.js",
   "license": "MIT",
   "scripts": {

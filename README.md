@@ -64,5 +64,3 @@ Legend:
 
 - :heavy_check_mark: Finished
 - :warning: Extra features.
-
-After a small refactor and three main features finished and with test coverage this will turn into version 1, if possible, I will host her online to be used by anyone without need all the coding part.
